@@ -1,5 +1,6 @@
 using Authentication_WebApi.Models;
 using Authentication_WebApi.Repositories;
+using Authentication_WebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,8 +37,8 @@ namespace Authentication_WebApi
             // adds Entity Framework  
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbConnectionStr")));
 
-            // dependency injection for i user repository interface
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();  // dependency injection for user repository interface
+            services.AddScoped<IUserService, UserService>();    // dependency injection for user service interface
 
             // adds authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

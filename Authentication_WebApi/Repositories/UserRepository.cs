@@ -16,12 +16,12 @@ namespace Authentication_WebApi.Repositories
             _context = context;
         }
 
-        public User CreateUser(CreateUserViewModel user)
+        public User CreateUser(CreateUserViewModel model)
         {
             var createdUser = new User
             {
-                UserName = user.UserName,
-                Password = user.Password,
+                UserName = model.UserName,
+                Password = model.Password,
                 Salt = "!@#$",
                 RefreshTokens = null
             };
