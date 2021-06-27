@@ -1,4 +1,5 @@
 ﻿using Authentication_WebApi.Models;
+using Authentication_WebApi.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,42 @@ namespace Authentication_WebApi.Repositories
             _context = context;
         }
 
+        public User CreateUser(CreateUserViewModel user)
+        {
+            var createdUser = new User
+            {
+                UserName = user.UserName,
+                Password = user.Password,
+                Salt = "!@#$",
+                RefreshTokens = null
+            };
+                
+            _context.Users.Add(createdUser);
+            _context.SaveChanges();
+
+            return createdUser;
+        }
+
+        public void UpdateUser(User user)
+        {
+            var updatedUser = _context.Users.Attach(user);
+            updatedUser.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.SaveChanges();
+        }
+
         public IEnumerable<User> GetAllUsers()
         {
-            throw new NotImplementedException();
+            return _context.Users;
         }
 
         public User GetUserById(int userId)
         {
-            throw new NotImplementedException();
+            return _context.Users.FirstOrDefault(u => u.UserId == userId);
         }
 
         public User GetUserByName(string userName)
         {
-            throw new NotImplementedException();
+            return _context.Users.FirstOrDefault(u => u.UserName == userName);
         }
     }
 }
