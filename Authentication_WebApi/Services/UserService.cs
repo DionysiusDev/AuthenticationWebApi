@@ -19,10 +19,12 @@ namespace Authentication_WebApi.Services
 
         public User CreateUser(CreateUserViewModel model)
         {
-            if (IsValidUserName(model.UserName))
+            if (IsValidUserName(model.UserName) && !_userRepository.IsExistingUserName(model.UserName))
             {
                 if (IsValidPassword(model.Password))
                 {
+                    //TODO hash Password and generate salt
+
                     var user = _userRepository.CreateUser(model);
 
                     return user;

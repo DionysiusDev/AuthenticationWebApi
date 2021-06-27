@@ -14,5 +14,6 @@ namespace Authentication_WebApi.Repositories
         IEnumerable<User> GetAllUsers();
         User GetUserById(int userId);
         User GetUserByName(string userName);
+        bool IsExistingUserName(string UserName);
     }
 }

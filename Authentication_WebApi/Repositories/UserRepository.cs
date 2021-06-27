@@ -53,5 +53,10 @@ namespace Authentication_WebApi.Repositories
         {
             return _context.Users.FirstOrDefault(u => u.UserName == userName);
         }
+
+        public bool IsExistingUserName(string UserName)
+        {
+            return _context.Users.Any(u => u.UserName == UserName);
+        }
     }
 }
