@@ -8,6 +8,13 @@ namespace Authentication_WebApi.Repositories
 {
     public class UserRepository : IUserRepository
     {
+        private readonly AppDbContext _context;
+
+        public UserRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public IEnumerable<User> GetAllUsers()
         {
             throw new NotImplementedException();
