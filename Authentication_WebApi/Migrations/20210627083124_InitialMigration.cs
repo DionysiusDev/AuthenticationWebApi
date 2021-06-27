@@ -13,9 +13,9 @@ namespace Authentication_WebApi.Migrations
                 {
                     UserId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
-                    Salt = table.Column<string>(nullable: true)
+                    UserName = table.Column<string>(nullable: false),
+                    Password = table.Column<string>(nullable: false),
+                    Salt = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
