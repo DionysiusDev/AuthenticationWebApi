@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ub8+rbklUdzq64R/cjxw+xKJumYhbk0PNcKOofkAgbilt9mwJH0qCt7lGlVrxAoHxnBjBeC7NAIV1qsyjsl4nw==",
+  "dgSpecHash": "nJ0OPiAAtKZW/LIa2w3L0iB2DJD+k0tSeGDxz1ELv/6nD98n4w+UN6ecJ4ZTUR1MLapSsR0YeHm8lpOcu9DZYQ==",
   "success": true,
   "projectFilePath": "E:\\My_Dev_Programs\\02-CSharp\\ASPCore_3-1\\Authentication_WebApi\\Authentication_WebApi\\Authentication_WebApi.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\Dev\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\Dev\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

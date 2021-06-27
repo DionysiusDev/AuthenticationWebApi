@@ -476,6 +476,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.8.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2344,6 +2353,21 @@
         "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Portable.BouncyCastle/1.8.10": {
+      "sha512": "XLhjNAwuVB9ynwn11l5K44eyozh8q6gFseTrlnLNttejimglX7+F9+vxh60LPjvA/DAt6fUdS43N3ah8K6eaWg==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.8.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.8.10.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5892,6 +5916,7 @@
       "Microsoft.EntityFrameworkCore >= 3.1.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.16",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.16",
+      "Portable.BouncyCastle >= 1.8.10",
       "Swashbuckle.AspNetCore >= 6.1.4"
     ]
   },
@@ -5955,6 +5980,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.16, )"
+          },
+          "Portable.BouncyCastle": {
+            "target": "Package",
+            "version": "[1.8.10, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

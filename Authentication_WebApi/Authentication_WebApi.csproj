@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Security\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
