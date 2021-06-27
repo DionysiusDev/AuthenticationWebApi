@@ -11,5 +11,7 @@ namespace Authentication_WebApi.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
+
+        DbSet<User> Users { get; set; }
     }
 }
