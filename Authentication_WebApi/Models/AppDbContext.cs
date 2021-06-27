@@ -12,6 +12,6 @@ namespace Authentication_WebApi.Models
         {
         }
 
-        DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
